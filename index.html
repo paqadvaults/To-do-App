@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/4671ad4fda.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+    <div id="side-menu">
+        <ul>
+            <li id="past-tasks">
+                <i class="fas fa-history"></i>
+                <span>Past Tasks</span>
+            </li>
+            <li id="todays-tasks">
+                <i class="fas fa-calendar-day"></i>
+                <span>Today's Tasks</span>
+            </li>
+            <li id="upcoming-tasks">
+                <i class="fas fa-calendar-plus"></i>
+                <span>Upcoming Tasks</span>
+            </li>
+        </ul>
+    </div>
+    </div>
+    <div id="main-content">
+        <h1>Task Manager</h1>
+        <form>
+            <input type="text" id="task" placeholder="New Task">
+            <input type="date" id="due-date">
+            <select id="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button type="submit" id="submit">Add Task</button>
+        </form>
+        <ul id="task-list" class="task-list"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
